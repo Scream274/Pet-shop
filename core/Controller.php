@@ -1,5 +1,7 @@
 <?php
 
+
+
 namespace Myapp;
 
 abstract class Controller
@@ -56,7 +58,7 @@ abstract class Controller
         unset($navModel);
 
     }
-    
+
     public function call($method)
     {
         if (method_exists($this, $method)) {

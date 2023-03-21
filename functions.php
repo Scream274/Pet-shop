@@ -15,6 +15,7 @@ function autoloadClassRegister($className)
         DB_PATH,
         MODELS_PATH,
         CONTROLLERS_PATH,
+        ADM_CORE_PATH,
         SERVICES_PATH
     ];
 

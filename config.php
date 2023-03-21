@@ -18,3 +18,7 @@ const SERVICES_PATH = ABS_PATH."services".SEP;
 
 const VIEW_PATH = ABS_PATH."views".SEP;
 const PAGES_PATH = VIEW_PATH."pages".SEP;
+
+const ADMIN_PATH = ABS_PATH."control_panel/";
+const ADM_CORE_PATH = ADMIN_PATH.'core/';
+

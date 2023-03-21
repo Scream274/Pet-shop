@@ -44,6 +44,19 @@
     <!-- Main Sidebar Container -->
     <? require_once ADM_VIEWS_PATH . "sidebar.php"; ?>
 
+    <?php if (!empty($data["success"])) { ?>
+        <div class="alert-success text-center" role="alert">
+            <?php
+            echo $data["success"] ?>
+        </div>
+    <?php } ?>
+
+    <?php if (!empty($data["error"])) { ?>
+        <div class="alert-danger text-center" role="alert">
+            <?php
+            echo $data["error"] ?>
+        </div>
+    <?php } ?>
     <!-- Content Wrapper. Contains page content -->
     <? require_once $contentView; ?>
     <!-- /.content-wrapper -->
