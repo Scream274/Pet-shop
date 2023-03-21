@@ -1,8 +1,6 @@
 <?php
 
-namespace core;
-
-use Myapp\Router;
+namespace Myapp;
 
 class AdminKernel
 {

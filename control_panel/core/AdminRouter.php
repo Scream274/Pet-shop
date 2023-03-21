@@ -1,6 +1,6 @@
 <?php
 
-namespace core;
+namespace Myapp;
 
 class AdminRouter
 {
@@ -13,9 +13,9 @@ class AdminRouter
 
     public function start()
     {
-        $route = $_SERVER["REQUEST_URI"];
-        $route = explode("?", $route)[0];
-        $routes = explode("/", $route);
+        $route = $_SERVER['REQUEST_URI'];
+        $route = explode('?', $route)[0];
+        $routes = explode('/', $route);
 
         if (empty($routes[2])) {
             $this->controllerName = $this->defaultController;

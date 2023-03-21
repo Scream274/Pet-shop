@@ -1,12 +1,12 @@
 <?php
 const DEV_MODE = true;
 
-const DB_HOST = "127.0.0.1";
-const DB_USER = "root";
-const DB_PASSWORD = "";
-const DB_NAME = "pet_shop_db";
+const DB_HOST = '127.0.0.1';
+const DB_USER = 'root';
+const DB_PASSWORD = '';
+const DB_NAME = 'pet_shop_db';
 
-const EXT = ".php";
+const EXT = '.php';
 const SEP = '\\';
 const ABS_PATH = __DIR__.SEP;
 const CORE_PATH = ABS_PATH."core".SEP;

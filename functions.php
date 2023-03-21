@@ -1,5 +1,6 @@
 <?php
 
+
 function varSuperDump($obj)
 {
     echo "<pre>";
@@ -14,14 +15,11 @@ function autoloadClassRegister($className)
         DB_PATH,
         MODELS_PATH,
         CONTROLLERS_PATH,
-        SERVICES_PATH,
-        ADM_CORE_PATH,
-        ADM_CONTROL_PATH,
-        ADM_MODELS_PATH
+        SERVICES_PATH
     ];
 
     foreach ($dirs as $dir) {
-        $className = explode("\\", $className);
+        $className = explode('\\', $className);
         $className = end($className);
         if (file_exists($dir . $className . EXT)) {
             require_once $dir . $className . EXT;
@@ -30,7 +28,7 @@ function autoloadClassRegister($className)
     }
 }
 
-spl_autoload_register("autoloadClassRegister");
+spl_autoload_register('autoloadClassRegister');
 
 function getNavBar()
 {

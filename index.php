@@ -1,4 +1,5 @@
 <?php
+
 //include "tempalte.php";
 //include_once "navbar".EXT;
 //require "configurate.php";
@@ -10,7 +11,7 @@ require_once "functions" . EXT;
 $option = new \Myapp\OptionsModel();
 $navModel = new \Myapp\NavigateModel();
 
-if (DEV_MODE == true) {
+if (DEV_MODE) {
    error_reporting(E_ALL);
 } else {
    error_reporting(0);

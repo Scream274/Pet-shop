@@ -4,6 +4,9 @@ namespace Myapp;
 
 abstract class Controller
 {
+    abstract function index();
+
+    public $userAuth = null;
     protected $data = [];
 
     public function __construct()
@@ -11,6 +14,8 @@ abstract class Controller
         $this->data['error'] = null;
         $this->data[''] = null;
         $this->data['message'] = null;
+
+        $this->userAuth = new UserAuth();
 
         $this->getFormatOptions();
         $this->getFormatNavigation();
@@ -51,9 +56,7 @@ abstract class Controller
         unset($navModel);
 
     }
-
-    abstract function index();
-
+    
     public function call($method)
     {
         if (method_exists($this, $method)) {

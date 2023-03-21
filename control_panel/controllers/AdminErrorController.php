@@ -1,14 +1,12 @@
 <?php
 
-namespace controllers;
-
-use Myapp\Controller;
+namespace Myapp;
 
 class AdminErrorController extends Controller
 {
 
     function index()
     {
-
+        echo "admin panel error";
     }
 }
