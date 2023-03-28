@@ -1,6 +1,6 @@
 <?php
 
-
+session_start();
 const ADMIN_PATH = __DIR__.'/';
 require_once ADMIN_PATH . "admin_config.php";
 
