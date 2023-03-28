@@ -32,4 +32,13 @@ class OptionsModel extends DBContext
         ]) == 1;
     }
 
+    public function updateOption($id, $name, $value, $group)
+    {
+        return $this->updateOneRow($id, [
+                'name' => $name,
+                'value' => $value,
+                'group' => $group
+            ]) == 1;
+    }
+
 }

@@ -115,9 +115,9 @@ class DBContext
             $query = "UPDATE $this->tableName SET ";
             foreach ($data as $key => $value) {
                 if ($value == null) {
-                    $query .= "$key = NULL, ";
+                    $query .= "`$key` = NULL, ";
                 } else {
-                    $query .= "$key = '$value', ";
+                    $query .= "`$key` = '$value', ";
                 }
             }
             $query = mb_substr($query, 0, mb_strlen($query) - 2);
