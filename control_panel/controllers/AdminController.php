@@ -31,17 +31,19 @@ class AdminController extends Controller
     public function checkUser()
     {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            if(isset($_POST['email']) && isset($_POST['password'])){
+            if (isset($_POST['email']) && isset($_POST['password'])) {
                 //Validation
                 $email = htmlspecialchars(trim($_POST['email']));
-                $password= htmlspecialchars(trim($_POST['password']));
-                if($this->userAuth->isValidUser($email, $password)){
+                $password = htmlspecialchars(trim($_POST['password']));
+                $password = hash('sha256', $password);
+                if ($this->userAuth->isValidUser($email, $password)) {
                     //Sessions
                     $_SESSION['IP'] = $_SERVER['REMOTE_ADDR'];
                     $_SESSION['userId'] = $this->userAuth->getCurrentUser()['Id'];
+                    $_SESSION['login'] = $this->userAuth->getCurrentUser()['login'];
 
-                    $this->index();
-                    return;
+                    header("Location: /control_panel/admin/index");
+                    exit;
                 }
             }
         }
@@ -49,7 +51,8 @@ class AdminController extends Controller
         $this->login();
     }
 
-    public function logout(){
+    public function logout()
+    {
         unset($_SESSION['IP']);
         unset($_SESSION['userId']);
         session_destroy();
