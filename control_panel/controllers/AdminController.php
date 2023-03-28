@@ -51,6 +51,27 @@ class AdminController extends Controller
         $this->login();
     }
 
+    public function checkUserRegistration()
+    {
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            if (isset($_POST['login']) && isset($_POST['email']) && isset($_POST['password'])) {
+                //Validation
+
+                $login = htmlspecialchars(trim($_POST['login']));
+                $email = htmlspecialchars(trim($_POST['email']));
+                $password = htmlspecialchars(trim($_POST['password']));
+                $password = hash('sha256', $password);
+                $this->userAuth->registerUser($login, $email, $password);
+
+                $this->data['success'] = "Account created!";
+                $this->login();
+                exit;
+            }
+        }
+        $this->data['error'] = 'Error registration!';
+        $this->register();
+    }
+
     public function logout()
     {
         unset($_SESSION['IP']);

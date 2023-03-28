@@ -27,4 +27,11 @@ class UserAuth
         return (!is_null($this->currentUser));
     }
 
+    public function registerUser($login, $email, $password)
+    {
+        $userModel = new UserModel();
+        $this->currentUser = $userModel->addUser($login, $email, $password);
+        return (!is_null($this->currentUser));
+    }
+
 }

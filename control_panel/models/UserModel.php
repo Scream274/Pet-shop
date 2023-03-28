@@ -21,8 +21,13 @@ class UserModel extends DBContext
         return count($users) == 1 ? $users[0] : null;
     }
 
-    public function getAllTags()
+    public function addUser($login, $email, $password)
     {
-        return $this->getManyRows();
+        $this->addOneRow([
+            'login' => $login,
+            'email' => $email,
+            'password' => $password
+        ]);
     }
+
 }
