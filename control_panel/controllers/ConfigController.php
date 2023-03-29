@@ -66,4 +66,27 @@ class ConfigController extends Controller
             $this->login();
         }
     }
+
+    public function deleteOption()
+    {
+        if ($this->userAuth->isAuth()) {
+            if ($_SERVER['REQUEST_METHOD'] == "GET") {
+                if (isset($_GET['id'])) {
+                    $id = $_GET['id'];
+                    $isSystem = $_GET['isSystem'];
+                    $optM = new OptionsModel();
+
+                    if ($optM->deleteOption($id)) {
+                        $this->data['success'] = "Options deleted";
+                        $this->getFormatOptions();
+                    } else {
+                        $this->data['error'] = "Error. Options was not deleted.";
+                    }
+                    $this->getAllOptions();
+                }
+            }
+        } else {
+            $this->login();
+        }
+    }
 }

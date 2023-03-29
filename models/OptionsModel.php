@@ -41,4 +41,8 @@ class OptionsModel extends DBContext
             ]) == 1;
     }
 
+    public function deleteOption($id){
+        return $this->deleteOneRow($id) == 1;
+    }
+
 }

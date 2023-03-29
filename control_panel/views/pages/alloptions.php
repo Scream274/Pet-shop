@@ -100,8 +100,10 @@
                                         <div class="col-2 text-center">
                                             <button type="reset" class="btn btn-warning">Reset</button>
                                             <button type="submit" class="btn btn-success">Update</button>
-                                            <button type="button" class="btn btn-danger">X
+                                            <?php if(!$option['isSystem']){ ?>
+                                            <button onclick="location.href='/control_panel/config/deleteOption?id=<?= $option['Id'] ?>'" type="button" class="btn btn-danger">X
                                             </button>
+                                            <?php } ?>
                                         </div>
                                     </div>
                                 </div>
