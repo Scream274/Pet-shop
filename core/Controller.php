@@ -33,6 +33,16 @@ abstract class Controller
         unset($optModel);
     }
 
+    protected function getFormatCategories()
+    {
+        $categoryModel = new CategoryModel();
+        $this->data["categories"] = [];
+        foreach ($categoryModel->getAllCategories() as $key => $value) {
+            $this->data["categories"][$value["category"]] = $value;
+        }
+        unset($categoryModel);
+    }
+
     protected function getFormatNavigation()
     {
         $navModel = new NavigateModel();

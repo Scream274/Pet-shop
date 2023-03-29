@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="/control_panel/static/plugins/daterangepicker/daterangepicker.css">
     <!-- summernote -->
     <link rel="stylesheet" href="/control_panel/static/plugins/summernote/summernote-bs4.min.css">
+    <link rel="stylesheet" href="/control_panel/static/dist/css/style.css">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
