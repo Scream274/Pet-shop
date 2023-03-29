@@ -22,8 +22,6 @@ class ConfigController extends Controller
         if ($this->userAuth->isAuth()) {
             if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 if (isset($_POST['Id']) && isset($_POST['name']) && isset($_POST['value']) && isset($_POST['group'])) {
-                    echo 15;
-
                     $id = intval(htmlspecialchars(trim($_POST['Id'])));
                     $name = htmlspecialchars(trim($_POST['name']));
                     $value = htmlspecialchars(trim($_POST['value']));
@@ -35,6 +33,31 @@ class ConfigController extends Controller
                         $this->getFormatOptions();
                     } else {
                         $this->data['error'] = "Error. Options was not updated. ";
+                    }
+                    $this->getAllOptions();
+                }
+            }
+        } else {
+            $this->login();
+        }
+    }
+
+    public function createOption()
+    {
+        if ($this->userAuth->isAuth()) {
+            if ($_SERVER['REQUEST_METHOD'] == "POST") {
+                if (isset($_POST['name']) && isset($_POST['value']) && isset($_POST['group'])) {
+
+                    $name = htmlspecialchars(trim($_POST['name']));
+                    $value = htmlspecialchars(trim($_POST['value']));
+                    $group = htmlspecialchars(trim($_POST['group']));
+
+                    $optM = new OptionsModel();
+                    if ($optM->createOption($name, $value, $group)) {
+                        $this->data['success'] = "Options created";
+                        $this->getFormatOptions();
+                    } else {
+                        $this->data['error'] = "Error. Options was not created. ";
                     }
                     $this->getAllOptions();
                 }

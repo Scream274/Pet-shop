@@ -98,7 +98,7 @@ class DBContext
         $query = "INSERT INTO $this->tableName (";
         $values = "";
         foreach ($data as $key => $value) {
-            $query .= "$key, ";
+            $query .= "`$key`, ";
             $values .= "'$value', ";
         }
         $query = mb_substr($query, 0, mb_strlen($query) - 2);

@@ -26,9 +26,9 @@ class OptionsModel extends DBContext
     public function createOption($optionName, $optionValue, $optionGroup = NULL)
     {
         return $this->addOneRow([
-            "option_name" => $optionName,
-            "option_value" => $optionValue,
-            "option_group" => $optionGroup
+            "name" => $optionName,
+            "value" => $optionValue,
+            "group" => $optionGroup
         ]) == 1;
     }
 
