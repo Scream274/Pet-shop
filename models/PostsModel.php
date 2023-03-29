@@ -39,4 +39,22 @@ class PostsModel extends DBContext
                  WHERE posts.keywords LIKE '%$keyword%'";
         return $this->executeQuery($query);
     }
+
+    public function createPost($catId, $description, $title, $slogan, string $targetFile, string $imgAlt, $keywords)
+    {
+        return $this->addOneRow([
+            'title'=>$title,
+            'slogan'=>$slogan,
+            'img_alt'=>$imgAlt,
+            'keywords'=>$keywords,
+            'post_img'=>$targetFile,
+            'description' => $description,
+            'category_Id' => $catId
+        ]);
+    }
+
+    public function lastInsertPostId(){
+        $query = "SELECT MAX(id) FROM posts";
+        return $this->executeQuery($query)[0];
+    }
 }

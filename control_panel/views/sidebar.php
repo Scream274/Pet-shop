@@ -119,7 +119,35 @@
                         </li>
                     </ul>
                 </li>
-
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-book"></i>
+                        <p>
+                            Blog
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="/control_panel/Blog/Index" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>All posts</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/control_panel/adminblog/index" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Create post</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/control_panel/Blog/getAllTags" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Tags</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

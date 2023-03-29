@@ -28,6 +28,8 @@
     <!-- summernote -->
     <link rel="stylesheet" href="/control_panel/static/plugins/summernote/summernote-bs4.min.css">
     <link rel="stylesheet" href="/control_panel/static/dist/css/style.css">
+    <!-- Bootstrap4 Duallistbox -->
+    <link rel="stylesheet" href="/control_panel/static/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -82,6 +84,8 @@
 </script>
 <!-- Bootstrap 4 -->
 <script src="/control_panel/static/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap4 Duallistbox -->
+<script src="/control_panel/static/plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
 <!-- ChartJS -->
 <script src="/control_panel/static/plugins/chart.js/Chart.min.js"></script>
 <!-- Sparkline -->

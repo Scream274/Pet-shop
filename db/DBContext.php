@@ -106,6 +106,7 @@ class DBContext
         $values = mb_substr($values, 0, mb_strlen($values) - 2);
         $query .= $values . ")";
 
+        echo $query;
         return $this->executeQuery($query, "INSERT");
     }
 
