@@ -23,4 +23,19 @@ class CategoryModel extends DBContext
             'slug'=>$slug
         ]);
     }
+
+    public function updateCategory($id, $category, $description, $imgAlt, $slug)
+    {
+        return $this->updateOneRow($id, [
+            'category'=>$category,
+            'description'=>$description,
+            'img_alt'=>$imgAlt,
+            'slug'=>$slug
+        ]);
+    }
+
+    public function deleteCategory($id)
+    {
+        return $this->deleteOneRow($id) == 1;
+    }
 }

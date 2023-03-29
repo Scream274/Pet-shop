@@ -73,7 +73,6 @@ class ConfigController extends Controller
             if ($_SERVER['REQUEST_METHOD'] == "GET") {
                 if (isset($_GET['id'])) {
                     $id = $_GET['id'];
-                    $isSystem = $_GET['isSystem'];
                     $optM = new OptionsModel();
 
                     if ($optM->deleteOption($id)) {
