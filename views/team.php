@@ -18,8 +18,8 @@
                     </div>
                 </div>
                 <div class="bg-light text-center p-4">
-                    <h5 class="text-uppercase">Full Name</h5>
-                    <p class="m-0">Designation</p>
+                    <h5 class="text-uppercase">Sofia Lake</h5>
+                    <p class="m-0">Pet groomer</p>
                 </div>
             </div>
             <div class="team-item">
@@ -34,8 +34,8 @@
                     </div>
                 </div>
                 <div class="bg-light text-center p-4">
-                    <h5 class="text-uppercase">Full Name</h5>
-                    <p class="m-0">Designation</p>
+                    <h5 class="text-uppercase">Erica White</h5>
+                    <p class="m-0">Pet trainer</p>
                 </div>
             </div>
             <div class="team-item">
@@ -50,8 +50,8 @@
                     </div>
                 </div>
                 <div class="bg-light text-center p-4">
-                    <h5 class="text-uppercase">Full Name</h5>
-                    <p class="m-0">Designation</p>
+                    <h5 class="text-uppercase">Cristina Tomason</h5>
+                    <p class="m-0">Pet Veterinarian.</p>
                 </div>
             </div>
             <div class="team-item">
@@ -66,8 +66,8 @@
                     </div>
                 </div>
                 <div class="bg-light text-center p-4">
-                    <h5 class="text-uppercase">Full Name</h5>
-                    <p class="m-0">Designation</p>
+                    <h5 class="text-uppercase">Laura Brown</h5>
+                    <p class="m-0">Pet consultant</p>
                 </div>
             </div>
             <div class="team-item">
@@ -82,8 +82,8 @@
                     </div>
                 </div>
                 <div class="bg-light text-center p-4">
-                    <h5 class="text-uppercase">Full Name</h5>
-                    <p class="m-0">Designation</p>
+                    <h5 class="text-uppercase">Maria Muller</h5>
+                    <p class="m-0">Pet consultant</p>
                 </div>
             </div>
         </div>

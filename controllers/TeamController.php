@@ -7,6 +7,6 @@ class TeamController extends Controller
 
     function index()
     {
-        View::render(PAGES_PATH . 'team' . EXT, $this->data);
+        View::render(VIEW_PATH . 'team' . EXT, $this->data);
     }
 }

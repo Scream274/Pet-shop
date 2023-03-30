@@ -10,16 +10,20 @@
                 <form name="form" method="post" action="/about/getClientMessage">
                     <div class="row g-3">
                         <div class="col-12">
-                            <input type="text" name="name" class="form-control bg-light border-0 px-4" placeholder="Your Name" style="height: 55px;">
+                            <input type="text" name="name" class="form-control bg-light border-0 px-4"
+                                   placeholder="Your Name" style="height: 55px;">
                         </div>
                         <div class="col-12">
-                            <input type="email" name="email" class="form-control bg-light border-0 px-4" placeholder="Your Email" style="height: 55px;">
+                            <input type="email" name="email" class="form-control bg-light border-0 px-4"
+                                   placeholder="Your Email" style="height: 55px;">
                         </div>
                         <div class="col-12">
-                            <input type="text" name="subject" class="form-control bg-light border-0 px-4" placeholder="Subject" style="height: 55px;">
+                            <input type="text" name="subject" class="form-control bg-light border-0 px-4"
+                                   placeholder="Subject" style="height: 55px;">
                         </div>
                         <div class="col-12">
-                            <textarea name="message" class="form-control bg-light border-0 px-4 py-3" rows="8" placeholder="Message"></textarea>
+                            <textarea name="message" class="form-control bg-light border-0 px-4 py-3" rows="8"
+                                      placeholder="Message"></textarea>
                         </div>
                         <div class="col-12">
                             <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>

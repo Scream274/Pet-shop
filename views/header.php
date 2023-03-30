@@ -37,7 +37,6 @@ use Myapp\NavigateModel;
 </div>
 <!-- Topbar End -->
 
-
 <!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
     <a href="/" class="navbar-brand ms-lg-5">

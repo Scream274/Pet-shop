@@ -4,8 +4,8 @@
         <div class="row g-5">
             <div class="col-lg-3 col-md-6">
                 <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Get In Touch</h5>
-                <p class="mb-4">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed
-                    dolor</p>
+                <p class="mb-4">Shop for the best luxury dog bed from our collection of exclusive & customized products.
+                    Shop online for high-quality designer dog beds, blankets, and dog accessories.</p>
                 <p class="mb-2"><i
                             class="bi bi-geo-alt text-primary me-2"></i><?= $data["options"]["address"]["value"] ?></p>
                 <p class="mb-2"><i
@@ -18,13 +18,16 @@
                 <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Quick Links</h5>
                 <div class="d-flex flex-column justify-content-start">
                     <a class="text-body mb-2" href="/"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                    <a class="text-body mb-2" href="/about/index"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                    <a class="text-body mb-2" href="/about/index"><i class="bi bi-arrow-right text-primary me-2"></i>About
+                        Us</a>
                     <a class="text-body mb-2" href="/service/index"><i class="bi bi-arrow-right text-primary me-2"></i>Our
                         Services</a>
-                    <a class="text-body mb-2" href="/team/index"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
+                    <a class="text-body mb-2" href="/team/index"><i class="bi bi-arrow-right text-primary me-2"></i>Meet
+                        The Team</a>
                     <a class="text-body mb-2" href="/blog"><i class="bi bi-arrow-right text-primary me-2"></i>Latest
                         Blog</a>
-                    <a class="text-body" href="/about/contactUs"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                    <a class="text-body" href="/about/contactUs"><i class="bi bi-arrow-right text-primary me-2"></i>Contact
+                        Us</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
@@ -35,7 +38,8 @@
                         Us</a>
                     <a class="text-body mb-2" href="/service/index"><i class="bi bi-arrow-right text-primary me-2"></i>Our
                         Services</a>
-                    <a class="text-body mb-2" href="/team/index"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
+                    <a class="text-body mb-2" href="/team/index"><i class="bi bi-arrow-right text-primary me-2"></i>Meet
+                        The Team</a>
                     <a class="text-body mb-2" href="/blog"><i class="bi bi-arrow-right text-primary me-2"></i>Latest
                         Blog</a>
                     <a class="text-body" href="/about/contactUs"><i class="bi bi-arrow-right text-primary me-2"></i>Contact
