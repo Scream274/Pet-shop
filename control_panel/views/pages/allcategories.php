@@ -84,10 +84,8 @@
                                                 <input name="category" type="text" class="form-control" value="<?= $value['category'] ?>"/>
                                             </div>
                                             <div class="row">
-                                                <div class="col-1">
                                                     <input name="id" value="<?= $value['id'] ?>" type="hidden" class="form-control text-center" placeholder="id"
                                                            readonly>
-                                                </div>
                                                 <div class="col-sm img_block">
                                                     <!-- text input -->
                                                     <div class="col-1">
@@ -95,7 +93,7 @@
                                                                readonly>
                                                     </div>
                                                     <div class="form-group text-center">
-                                                        <img  src="<?= $value['img_src']?>" alt="<?= $value['img_alt']?>" style="max-width:80%">
+                                                        <img  src="<?= $value['img_src']?>" alt="<?= $value['img_alt']?>" style="max-height:190px; max-width:100%">
                                                     </div>
                                                 </div>
                                             </div>

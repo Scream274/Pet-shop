@@ -3,7 +3,7 @@
     <div class="container py-5">
         <div class="row justify-content-start">
             <div class="col-lg-8 text-center text-lg-start">
-                <h1 class="display-1 text-uppercase text-dark mb-lg-4">Pet Shop</h1>
+                <h1 class="display-1 text-uppercase text-dark mb-lg-4">Pet Blog</h1>
                 <h1 class="text-uppercase text-white mb-lg-4">Make Your Pets Happy</h1>
                 <p class="fs-4 text-white mb-lg-4">We love pets, and we believe loving pets makes us better people.
                     That’s one of the many reasons we do Anything for Pets – because they will do anything for us.</p>

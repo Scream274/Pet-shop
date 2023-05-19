@@ -7,7 +7,7 @@
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="/controlpanel/admin/index">Админ Панель</a></li>
+                        <li class="breadcrumb-item"><a href="/control_panel/admin/index">Admin panel</a></li>
                         <li class="breadcrumb-item active">Create post</li>
                     </ol>
                 </div>

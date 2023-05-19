@@ -40,21 +40,51 @@ class PostsModel extends DBContext
         return $this->executeQuery($query);
     }
 
-    public function createPost($catId, $description, $title, $slogan, string $targetFile, string $imgAlt, $keywords)
+    public function createPost($catId, $description, $title, $slogan, string $targetFile, string $imgAlt, $keywords, $content)
     {
         return $this->addOneRow([
-            'title'=>$title,
-            'slogan'=>$slogan,
-            'img_alt'=>$imgAlt,
-            'keywords'=>$keywords,
-            'post_img'=>$targetFile,
+            'title' => $title,
+            'slogan' => $slogan,
+            'img_alt' => $imgAlt,
+            'keywords' => $keywords,
+            'post_img' => $targetFile,
             'description' => $description,
-            'category_Id' => $catId
+            'category_Id' => $catId,
+            'content' => $content
         ]);
     }
 
-    public function lastInsertPostId(){
+    public function updatePost($postId, $catId, $description, $title, $slogan, string $imgAlt, $keywords, $content)
+    {
+        return $this->updateOneRow($postId,
+            ['title' => $title,
+                'slogan' => $slogan,
+                'img_alt' => $imgAlt,
+                'keywords' => $keywords,
+                'description' => $description,
+                'category_Id' => $catId,
+                'content' => $content]);
+    }
+
+    public function lastInsertPostId()
+    {
         $query = "SELECT MAX(id) FROM posts";
         return $this->executeQuery($query)[0];
+    }
+
+    public function deletePost($postId){
+        return $this->deleteOneRow($postId);
+    }
+
+    public function getPhotoPath($postId)
+    {
+        $query = "SELECT post_img FROM posts WHERE id = $postId";
+        $result = $this->executeQuery($query);
+
+        if (!empty($result) && isset($result[0]['post_img'])) {
+            return $result[0]['post_img'];
+        }
+
+        return null;
     }
 }

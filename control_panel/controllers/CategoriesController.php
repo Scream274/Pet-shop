@@ -74,10 +74,10 @@ class CategoriesController extends Controller
                     if($_FILES['imgSrc']['name'] == ''){
                         $catM = new CategoryModel();
                         if ($catM->updateCategory($id, $category, $description, $imgAlt, $slug)) {
-                            $this->data['success'] = "Category successfully created";
+                            $this->data['success'] = "Category successfully updated";
                             $this->getFormatCategories();
                         } else {
-                            $this->data['error'] = "An error occurred while creating the category.";
+                            $this->data['error'] = "An error occurred while updating the category.";
                         }
                         $this->index();
                     }
@@ -94,7 +94,7 @@ class CategoriesController extends Controller
                         if (move_uploaded_file($_FILES["imgSrc"]["tmp_name"], $targetFile)) {
                             $catM = new CategoryModel();
                             if ($catM->updateCategory($id, $category, $description, $imgAlt, $slug)) {
-                                $this->data['success'] = "Category successfully created";
+                                $this->data['success'] = "Category successfully updated";
                                 $this->getFormatCategories();
                             } else {
                                 $this->data['error'] = "An error occurred while creating the category.";

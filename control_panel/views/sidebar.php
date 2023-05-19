@@ -37,18 +37,23 @@
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                 data-accordion="false">
-                <!-- Add icons to the links using the .nav-icon class
-                     with font-awesome or any other icon font library -->
                 <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
+                    <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
-                            Widgets
-                            <span class="right badge badge-danger">New</span>
+                            Users
+                            <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="/control_panel/user/getAllUsers/" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>All users</p>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
-
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-th"></i>
@@ -62,24 +67,6 @@
                             <a href="/control_panel/config/getAllOptions/" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Options settings</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/charts/flot.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Flot</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/charts/inline.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Inline</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/charts/uplot.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>uPlot</p>
                             </a>
                         </li>
                     </ul>
@@ -99,24 +86,6 @@
                                 <p>All categories</p>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="pages/charts/flot.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Flot</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/charts/inline.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Inline</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/charts/uplot.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>uPlot</p>
-                            </a>
-                        </li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -129,7 +98,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="/control_panel/Blog/Index" class="nav-link">
+                            <a href="/control_panel/adminblog/getAllPosts" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>All posts</p>
                             </a>
@@ -141,9 +110,15 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/control_panel/Blog/getAllTags" class="nav-link">
+                            <a href="/control_panel/adminblog/getAllTags" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Tags</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/control_panel/adminblog/getAllComments" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Comments</p>
                             </a>
                         </li>
                     </ul>
